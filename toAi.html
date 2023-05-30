@@ -15,7 +15,7 @@
 
         h1 {
             color: #333333;
-            margin-top: 20px;
+            margin-top: 80px;
         }
 
         ul {
@@ -23,13 +23,11 @@
             padding: 0;
             margin: 30px auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         li {
-            flex: 0 0 auto;
             margin: 10px;
         }
 
@@ -52,36 +50,7 @@
         #default-link {
             display: none;
         }
-
-        #countdown {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #666666;
-        }
     </style>
-    <script type="text/javascript">
-        var countdownElement = document.getElementById('countdown');
-        var countdown = 5;
-
-        function updateCountdown() {
-            countdown--;
-            countdownElement.textContent = countdown + '秒后跳转';
-
-            if (countdown === 0) {
-                redirectToDefault();
-            } else {
-                setTimeout(updateCountdown, 1000);
-            }
-        }
-
-        function redirectToDefault() {
-            window.location.href = document.getElementById('default-link').href;
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            updateCountdown();
-        });
-    </script>
 </head>
 <body>
     <h1>请选择一个选项：</h1>
@@ -90,9 +59,7 @@
         <li><a href="https://chat.aidutu.cn/#/chat/1002">镜像二</a></li>
         <li><a href="https://2dog.51mskd.com/chat">镜像三</a></li>
         <li><a href="https://ai.bo-e.com/">镜像四</a></li>
-        <li><a id="default-link" href="https://chat.extkj.cn/">默认镜像</a></li>
+        <li><a href="https://chat.extkj.cn/">镜像五</a></li>
     </ul>
-
-    <div id="countdown">5秒后跳转</div>
 </body>
 </html>
