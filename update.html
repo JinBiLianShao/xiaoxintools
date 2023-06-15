@@ -6,19 +6,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
-            font-size: 16px;
+            padding: 10px;
+            font-size: 14px;
         }
 
         h1 {
             text-align: center;
-            font-size: 30px;
-            margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         p {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         ul {
@@ -27,22 +27,22 @@
         }
 
         li {
-            margin-bottom: 20px;
-        }
-
-        .version {
-            font-size: 20px;
             margin-bottom: 10px;
         }
 
-        .info {
+        .version {
             font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            font-size: 14px;
             color: #666;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 5px 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #f5f5f5;
@@ -56,28 +56,68 @@
             background-color: #eee;
             color: #FF0000;
         }
+
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .version {
+                font-size: 14px;
+                margin-bottom: 3px;
+            }
+
+            .info {
+                font-size: 12px;
+            }
+
+            .download-btn {
+                padding: 3px 6px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 <h1>小鑫工具箱历史版本列表</h1>
-<p>请根据自己软件版本下载最新版本</p>
+<p>请根据软件版本下载最新版本</p>
 
 <ul>
     <li>
         <div class="version">小鑫工具箱-v1.2.7</div>
         <div class="info">
             <p>上传时间：2023年6月15日</p>
-            <p>更新内容：1.完成线上更新功能 2.加入自建chatgpt镜像 3.更改为新版so，优化了程序运行速度</p>
+            <p>更新内容：</p>
+            <ul>
+                <li>完成线上更新功能</li>
+                <li>加入自建chatgpt镜像</li>
+                <li>更改为新版so，优化了程序运行速度</li>
+            </ul>
         </div>
-        <a href="./update/小鑫工具箱_1.2.7_opt.apk" class="download-btn">下载该版本</a>
+        <a href="./update/小鑫工具箱_1.2.7_opt.apk" class="download-btn">下载</a>
     </li>
     <li>
         <div class="version">小鑫工具箱-v1.2.6</div>
         <div class="info">
             <p>上传时间：2023年6月1日</p>
-            <p>更新内容：加入更新功能</p>
+            <p>更新内容：</p>
+            <ul>
+                <li>加入线上更新功能</li>
+            </ul>
         </div>
-        <a href="./update/小鑫工具箱_1.2.6_opt.apk" class="download-btn">下载该版本</a>
+        <a href="./update/小鑫工具箱_1.2.6_opt.apk" class="download-btn">下载</a>
     </li>
     <!-- 添加更多软件链接 -->
 </ul>
